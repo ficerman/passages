@@ -1,0 +1,20 @@
+.grid {
+	--min: 5ch;
+	--gap: 1rem;
+
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-evenly;
+	gap: var(--gap);
+}
+.column {
+	flex-direction: column;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+
+.grid > * {
+	flex: 2 2 var(--min);
+}
